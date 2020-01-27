@@ -1,0 +1,113 @@
+// Container
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+// Text styles
+.text {
+  &-lg {
+    font-style: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &-xl {
+    font-style: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-dark {
+    color: #999;
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  background: $primary-color;
+  color: $white;
+  padding: 0.4rem 1.3rem;
+  font-style: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &-rounded {
+    border-radius: 5px;
+  }
+
+  &-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+  }
+
+  &-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+  }
+}
+
+// Tabs
+.tabs {
+  background: $dark-color;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+
+  & .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    & div {
+      padding: 1.5rem;
+
+      &:hover {
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & p {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .tab-border {
+    border-bottom: $primary-color 4px solid;
+  }
+}
+
+// Tab content
+.tab-content {
+  padding: 3rem 0;
+  background: $black;
+  color: $white;
+
+  #tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
